@@ -1,0 +1,15 @@
+[
+    {
+        "id":1,
+        "imagen": "https://dcuero.com.ec/wp-content/uploads/2022/01/Dcuero5-21.jpg",
+        "nombre": "zapatos",
+        "precio": 200
+    },
+    {
+        "id":2,
+        "imagen": "/img/carpeta/foto.jpg",
+        "nombre": "Zq",
+        "precio": 2002,
+        "children":"Suave"
+    }
+]

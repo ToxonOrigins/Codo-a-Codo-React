@@ -1,0 +1,5 @@
+
+.items article{max-width: fit-content;}
+.items img{max-width: 200px;}
+.items{}
+.items a{max-width: inherit;display: inherit;}

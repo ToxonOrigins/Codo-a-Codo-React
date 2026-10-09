@@ -1,0 +1,23 @@
+body {
+    background-color: beige;
+    border: 3px solid black;
+}
+
+
+.tarjeta-demas {
+    background-color: aqua;
+}
+
+.tarjetaImg {
+    border-radius: 30px;
+}
+
+.tarjetanombre {
+    font-weight: bold;
+}
+
+.tarjeta {
+    background: wheat;
+    border: 2px solid black;
+    max-width: inherit;
+}
