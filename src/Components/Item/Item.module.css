@@ -4,15 +4,18 @@ body {
 }
 
 .tarjeta-demas {
-    background-color: aqua;
+    border: 1px solid black;
+    text-decoration: none;
 }
 
 .tarjetaImg {
     border-radius: 30px;
+    background-color: white;
 }
 
 .tarjetanombre {
     font-weight: bold;
+    text-decoration: none;
 }
 
 .tarjeta {
