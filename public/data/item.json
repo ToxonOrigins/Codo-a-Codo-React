@@ -7,9 +7,9 @@
     },
     {
         "id":2,
-        "imagen": "/img/carpeta/foto.jpg",
-        "nombre": "Zq",
-        "precio": 2002,
-        "children":"Suave"
+        "imagen": "../img/Banana.png",
+        "nombre": "Banana",
+        "precio": 1500,
+        "children":"Dominicana"
     }
 ]
