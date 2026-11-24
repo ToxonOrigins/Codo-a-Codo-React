@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import { ProductFormUI } from "./ProductFormUI";
 import { uploadImage } from "../../../services/UploadImages"
 import { validateProduct } from "../../utils/validateProduct";
-import { createProduct, updateProduct, getProductById } from "../../../services/ProductsService";
+import { createProduct, updateProduct, getProductById } from "../../../services/ProductsService.js";
 const getsid = async (id,loading) => {
     loading=false
     let productoxid = await getProductById(id);

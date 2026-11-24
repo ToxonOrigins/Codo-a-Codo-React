@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { ProductsAll } from "./Productsall.jsx";
-import { getProducts } from "../../services/ProductsService.js"
-import { getByCategory } from "../../services/ProductsService.js";
-
+import { getByCategory,getProducts } from "../../services/ProductsService.js";
 
 function ProductsallContainer() {
     const [productos, setProductos] = useState([])
