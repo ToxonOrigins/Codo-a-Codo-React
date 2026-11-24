@@ -1,4 +1,6 @@
-
+body {
+    background-color: rgb(129, 92, 172);
+}
 .hero {
   position: relative;
 

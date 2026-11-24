@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList.jsx";
+import {getProducts} from "../../services/ProductsService.js"
 function ItemListContainer() {
     const [productos, setProductos] = useState([])
     const [cargando, setCargando] = useState(true)
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        fetch("/data/item.json").then((respuesta) => {
-            if (!respuesta.ok) {throw new Error("No se pudo cargar los datos")}
-            return respuesta.json();
-        })
+        getProducts()
             .then((datos) => setProductos(datos))
             .catch((error) => setError(error.message))
             .finally(() => setCargando(false))

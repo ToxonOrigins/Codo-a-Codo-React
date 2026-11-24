@@ -1,16 +1,12 @@
-body {
-    background-color: beige;
-    border: 3px solid black;
-}
+
 
 .tarjeta-demas {
-    border: 1px solid black;
     text-decoration: none;
 }
 
 .tarjetaImg {
     border-radius: 30px;
-    background-color: white;
+    background-color: #ffffff4f;
 }
 
 .tarjetanombre {
@@ -19,7 +15,8 @@ body {
 }
 
 .tarjeta {
-    background: wheat;
-    border: 2px solid black;
+    background: rgb(168, 132, 189);
+    border: 1px solid black;
     max-width: inherit;
 }
+.tarjetaprecio{color:green;}

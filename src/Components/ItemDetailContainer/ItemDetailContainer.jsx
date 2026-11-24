@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ItemDetails } from "../ItemDetail/ItemDetail.jsx";
 import { useParams } from "react-router-dom";
+import { getProductById } from "../../services/ProductsService.js"
 
 function ItemDetailContainer() {
     const { id } = useParams();
@@ -13,22 +14,11 @@ function ItemDetailContainer() {
         setCargando(true);
         setError(null);
 
-        fetch("/data/item.json").then((respuesta) => {
-            if (!respuesta.ok) {
-                throw new Error("No se pudo cargar los datos")
-            }
-            return respuesta.json();
-        })
-            .then((datos) => {
-                const item = datos.find((producto) => String(producto.id) === id);
-                if (item) {
-                    setItemDetail(item)
-                    return;
-                }
-                throw new Error("Elemento no encontrado")
-            })
+
+        getProductById(id)
+            .then((data) => setItemDetail(data))
             .catch((error) => setError(error.message))
-            .finally(() => (setCargando(false)))
+            .finally(() => setCargando(false));
     }, [id])
 
     if (cargando) { return (<>Cargando productos</>) }

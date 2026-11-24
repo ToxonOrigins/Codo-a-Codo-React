@@ -1,0 +1,21 @@
+.itemscart article{
+    max-height: 90px;
+    max-width: 100vw;
+    display: flex;
+}
+.itemscart img{
+    max-height: 70px;
+    max-width: 70px;
+    flex:1
+}
+.itemscart div{
+    border: 0px;
+    margin-left: 20px;
+}
+.itemscart h2{
+    flex:2
+}
+.itemscart p{
+    visibility: hidden    ;
+}
+ul{padding: 0px 40px}
